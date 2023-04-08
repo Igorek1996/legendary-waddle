@@ -135,6 +135,7 @@ export default {
   border-radius: 90px;
   border: none;
   outline: none;
+  color: $gray_800;
   background: $primary_yellow;
   &.ui-button__disabled {
     opacity: 0.5;
