@@ -1,0 +1,106 @@
+@import url('normalize.css');
+@import url('_font_icon.scss');
+@import url('_fonts.scss');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: $font_main;
+  font-weight: $font_weight;
+  font-size: $font_size;
+  line-height: $line_height;
+  overflow-x: hidden;
+  color: $gray_500;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font_title;
+  margin: 0;
+  color: $gray_200;
+  font-weight: 700;
+}
+
+.text-bold {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: $gray_400;
+}
+
+p {
+  margin: 0;
+}
+
+.h3 {
+  font-size: 40px;
+  line-height: 48px;
+  @media screen and (max-width: 767px) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+.h4 {
+  font-size: 32px;
+  line-height: 40px;
+  @media screen and (max-width: 767px) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+
+.h5 {
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.container {
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main {
+  padding: 100px 0;
+  position: relative;
+  overflow-x: hidden;
+  @media screen and (max-width: 767px) {
+    padding: 50px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 125px;
+    @media screen and (max-width: 767px) {
+      gap: 50px;
+    }
+  }
+  &__bg {
+    &-item {
+      background: url('../images/Centauri.png') left center no-repeat;
+      position: absolute;
+      height: 480px;
+      width: 522px;
+      right: -240px;
+      top: 219px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.section {
+  position: relative;
+  z-index: 1;
+}
+
+img {
+  max-width: 100%;
+}
